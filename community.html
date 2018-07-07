@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>社区天地</title>
+<link href="css/communitycss.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+window.onload=initForm;
+function initForm(){
+	var myDate=new Date();
+	var year=myDate.getFullYear();
+	var month=myDate.getMonth()+1;
+	var day=myDate.getDate();
+	var week=myDate.getDay();
+	var hour=myDate.getHours();
+	var minute=myDate.getMinutes();
+	var second=myDate.getSeconds();
+	var str=year+"年"+month+"月"+day+"日 &nbsp; ";
+	var weekArray=new Array("日","一","二","三","四","五","六");
+	str=str+"星期"+weekArray[week];
+	if(hour>=18&&hour<=24||hour>=1&&hour<6){
+		hour=hour-12;
+		str=str+"晚上"+"&nbsp;&nbsp;"+hour;
+		}
+		
+		else if(hour>=6&&hour<=12){
+		str=str+"上午"+"&nbsp;&nbsp;"+hour;
+		}
+		
+		else {
+		hour=hour-12;
+		str=str+"下午"+"&nbsp;&nbsp;"+hour;
+		}
+	str=str+":"+minute+":"+second;
+	var obj=document.getElementById("myClock");
+	obj.innerHTML=str;
+	}
+	window.setInterval(initForm,1000);
+</script>
+</head>
+
+<body>
+<div class="header">
+<div class="h_left">
+	<img src="images/logo.png"  style="width:55px; height:55px;" />
+    <img src="images/name.png" style="width:150px; height:50px;"/>
+</div>
+<div class="nav">
+	<ul>
+    	<li><a href="index.html">首页</a></li>
+        <li><a href="special.html">特色民宿</a></li>
+        <li><a href="community.html">社区天地</a></li>
+        <li><a href="bbs.html">论坛</a></li>
+    </ul>
+</div>
+<div class="h_right">
+ <ul>
+ 	<li><a href="#">注册</a></li>
+    <li><a href="#">登陆</a></li>
+    <li><a href="#">免费发布房屋</a></li>
+ </ul>
+ 
+</div>
+</div>
+<div class="content">
+<div class="con_left">
+<p class="p1">社区精选</p><hr style="width:710px; border:none; height:1px; background-color:#CCC; margin:10px 20px;">
+<div class="box1">
+<div class="box_1">
+<img src="images/f_left1.jpg">
+</div>
+<section>
+<img src="images/bbs01.jpg"><span><a class="p-title" href="#" target="_blank">冬日的北京，不同往常的旅行味道</a> <br>              <a class="author-info" style="color:#3b83cb;" href="#" target="_blank">作者：小豆学长</a></span><br>
+<p>旅行的意义，人生就是一次充满未知的旅行，在乎的是沿途的风景，在乎的是看风景的心情，旅行不会因为美丽的风景终止。走过的路成为背后的风景，不能回头不能停留，若此刻停留，将会错过更好..[详情]</p>
+</section>
+</div>
+<div class="box2">
+<div class="box_2">
+<img src="images/f_left2.jpg">
+</div>
+<section>
+<img src="images/bbs03.jpg"><span><a class="p-title" href="#" target="_blank">胡同里的市井北京丨生逢灿烂的日子</a> <br>
+<a class="author-info" style="color:#3b83cb;" href="#" target="_blank">作者：蝈蝈小姐</a></span><br>
+<p>这里曾是我读过三年研究僧的城市，自打儿子出生，还未曾好好的感受下帝都皇城根儿下的风土人情，所以，这次的住宿，就从途家，选在了非常有老北京特色的胡同四合院内，带儿子看一看老北京人的生[详情]</p>
+</section>
+</div>
+<div class="box3">
+<div class="box_3">
+<img src="images/f_left3.jpg">
+</div>
+<section>
+<img src="images/bbs05.jpg"><span><a class="p-title" href="#" target="_blank">飞到北纬18度的三亚晒太阳</a> <br>
+<a class="author-info" style="color:#3b83cb;" href="#" target="_blank">作者：沈小娴</a></span><br><br>
+<p>听说新一股冷空气正在酝酿，这周即将从西伯利亚发货，自北方逐渐南下，寒流不服输般地较劲，一阵比一阵厉害，北方已早早开启了暖气，在没有暖气的包邮区，想要看头顶的蓝天白云似乎已经成为..[详情]</p>
+</section>
+</div>
+<div class="box4">
+<div class="box_4">
+<img src="images/f_left4.jpg">
+</div>
+<section>
+<img src="images/bbs02.jpg"><span><a class="p-title" href="#" target="_blank">“佛系青年”应该住什么样的民宿？</a> <br>
+<a class="author-info" style="color:#3b83cb;" href="#" target="_blank">作者：t姐@途家 </a></span><br>
+<p>最近，“佛系”势力蔓延互联网，一度成为时下最红的网络流行语。你觉得“佛系青年”应该住什么样的民宿呢？我看，还是一切随缘吧！[详情]</p>
+</section>
+</div>
+</div>
+<div class="con_right">
+<p class="p2">热门目的地</p><hr style="width:300px; border:none; height:1px; background-color:#CCC;"><br>
+<div class="box01"><img src="images/f_right1.jpg"></div>
+<p class="p3">有趣的房东</p><hr style="width:300px; border:none; height:1px; background-color:#CCC;">
+<div class="box02">
+<div class="middle">
+<img src="images/f_right_1.jpg"><span><a href="#">她在禅茶民宿里过云淡风轻的小日子 </a><br>成都非宿艺舍 洋洋</span>
+</div>
+<div class="middle">
+<img src="images/f_right_2.jpg">
+<span><a href="#">房东会跳舞，民宿亦生动  </a><br><br>成都穿阅 爆爆</span>
+</div>
+<div class="middle">
+<img src="images/f_right_3.jpg">
+<span><a href="#">把俄罗斯游客带到海南的外国房东   </a><br>应许之园 安德烈</span>
+</div>
+<div class="middle">
+<img src="images/f_right_4.jpg">
+<span><a href="#">爱跨界的“潮姐”和她的网红民宿  </a><br>南京格格家 海芸</span>
+</div>
+</div>
+<p class="p3">热门文章</p><hr style="width:300px; border:none; height:1px; background-color:#CCC;">
+<div class="box03">
+<ul>
+	<li><a href="#">大阪心斋桥买买买最全攻略</a></li>
+    <li><a href="#">途家x大麦|住途家，躁起来，演唱会门票免</a></li>
+    <li><a href="#">在北京最寒冷的冬天里 我被温暖撞了一下腰</a></li>
+    <li><a href="#">家庭出游，这里是旅途中的家</a></li>
+    <li><a href="#">寻找有趣的你 一起趣睡全球招募趣睡体</a></li>
+</ul>
+</div>
+</div>
+</div><!--content部分-->
+
+<div class="footer">
+<section>
+<p class="p1"><a href="#">相关法律</a>&nbsp;|&nbsp;版权所有&nbsp;copy&copy;云桂信息学院计应1601李少君&nbsp;15256549570 </p>
+</section>
+</div>
+<div id="myClock"></div>
+</body>
+</html>

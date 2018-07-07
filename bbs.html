@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>论坛</title>
+<link href="css/bbcss.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $("#current").click(function(){
+		$("#body01").show();
+		$("#body02").hide();
+		});
+	$("#latest").click(function(){
+		$("#body02").show();
+		$("#body01").hide();
+		});
+});
+window.onload=initForm;
+function initForm(){
+	var myDate=new Date();
+	var year=myDate.getFullYear();
+	var month=myDate.getMonth()+1;
+	var day=myDate.getDate();
+	var week=myDate.getDay();
+	var hour=myDate.getHours();
+	var minute=myDate.getMinutes();
+	var second=myDate.getSeconds();
+	var str=year+"年"+month+"月"+day+"日 &nbsp; ";
+	var weekArray=new Array("日","一","二","三","四","五","六");
+	str=str+"星期"+weekArray[week];
+	if(hour>=18&&hour<=24||hour>=1&&hour<6){
+		hour=hour-12;
+		str=str+"晚上"+"&nbsp;&nbsp;"+hour;
+		}
+		
+		else if(hour>=6&&hour<=12){
+		str=str+"上午"+"&nbsp;&nbsp;"+hour;
+		}
+		
+		else {
+		hour=hour-12;
+		str=str+"下午"+"&nbsp;&nbsp;"+hour;
+		}
+	str=str+":"+minute+":"+second;
+	var obj=document.getElementById("myClock");
+	obj.innerHTML=str;
+	}
+	window.setInterval(initForm,1000);
+</script>
+</head>
+
+<body>
+<div class="header">
+<div class="h_left">
+	<img src="images/logo.png"  style="width:55px; height:55px;" />
+    <img src="images/name.png" style="width:150px; height:50px;"/>
+</div>
+<div class="nav">
+	<ul>
+    	<li><a href="index.html">首页</a></li>
+        <li><a href="special.html">特色民宿</a></li>
+        <li><a href="community.html">社区天地</a></li>
+        <li><a href="bbs.html">论坛</a></li>
+    </ul>
+</div>
+<div class="h_right">
+ <ul>
+ 	<li><a href="#">注册</a></li>
+    <li><a href="#">登陆</a></li>
+    <li><a href="#">免费发布房屋</a></li>
+ </ul>
+ 
+</div>
+</div>
+<div class="content">
+<div class="con_left">
+<div class="menu">
+<ul>
+    <li id="current"><a href="#">最近发表▽</a></li>
+    <li id="latest" ><a href="#">最热排行▽</a></li> 
+</ul>
+</div>
+<div id="body01">
+                        <dl>
+                         	<dd><img src="images/bbs01.jpg" /><a href="#"> 	
+这不就是“生逢灿烂的日子”吗？ </a> <br /><span>蝈蝈小姐 发表于：2017-12-18 03:43</span></dd>   
+<dd><img src="images/bbs02.jpg" /><a href="#"> 	
+我来过杭州的这家民宿，我觉得这里可以改变一个人的 </a> <br /><span> 小豆学长 发表于：2017-12-29 13:25 </span></dd>   
+<dd><img src="images/bbs03.jpg" /><a href="#"> 	 	
+冬季到大连看海，我闻到了阵阵的咖啡香 </a> <br /><span> 阿拉苏 发表于：2017-12-21 15:14</span></dd>   
+<dd><img src="images/bbs04.jpg" /><a href="#"> 	
+姥姥家带你感受北京的年味，原来我们都是童年人</a> <br /><span> 冬日奇葩 发表于：2017-12-27 20:39</span></dd>   
+<dd><img src="images/bbs05.jpg" /><a href="#"> 	
+大理的小院子，印证了“生活就是度假”并不是梦 </a> <br /><span> 飘女孩儿 发表于：2017-12-27 13:01</span></dd>   
+<dd><img src="images/bbs06.jpg" /><a href="#"> 	
+去日本旅行你怎么可以错过这些？  </a> <br /><span> 侯覚 发表于：2017-12-27 01:073</span></dd>   
+<dd><img src="images/bbs07.jpg" /><a href="#"> 	
+赏虞山红枫，品虞城美食，这个冬天过得有色有味</a> <br /><span>136****5694 发表于：2017-12-18 03:43</span></dd>                 
+                         </dl>
+                     </div> 
+<div id="body02">
+                     <dl>
+                     
+                         	<dd><img src="images/bbs07.jpg" /><a href="#"> 	
+赏虞山红枫，品虞城美食，这个冬天过得有色有味</a> <br /><span>136****5694 发表于：2017-12-18 03:43</span></dd>   
+<dd><img src="images/bbs06.jpg" /><a href="#"> 	
+去日本旅行你怎么可以错过这些？  </a> <br /><span> 侯覚 发表于：2017-12-27 01:073</span></dd>   
+<dd><img src="images/bbs05.jpg" /><a href="#"> 	
+大理的小院子，印证了“生活就是度假”并不是梦 </a> <br /><span> 飘女孩儿 发表于：2017-12-27 13:01</span></dd>   
+<dd><img src="images/bbs04.jpg" /><a href="#"> 	
+姥姥家带你感受北京的年味，原来我们都是童年人</a> <br /><span> 冬日奇葩 发表于：2017-12-27 20:39</span></dd>   
+<dd><img src="images/bbs03.jpg" /><a href="#"> 	 	
+冬季到大连看海，我闻到了阵阵的咖啡香 </a> <br /><span> 阿拉苏 发表于：2017-12-21 15:14</span></dd>   
+<dd><img src="images/bbs02.jpg" /><a href="#"> 	
+这不就是“生逢灿烂的日子”吗？ </a> <br /><a href="#"> 	
+我来过杭州的这家民宿，我觉得这里可以改变一个人的 </a> <br /><span> 小豆学长 发表于：2017-12-29 13:25 </span></dd>   
+<dd><img src="images/bbs01.jpg" /><a href="#"> 	
+这不就是“生逢灿烂的日子”吗？ </a> <br /><span>蝈蝈小姐 发表于：2017-12-18 03:43</span></dd>                 
+                         
+                     </dl>
+                     
+</div>
+</div><!--left-->
+<div class="con_right">
+<p>发现全球美好住所</p>
+<img  src="images/f_right1.jpg">
+<img  src="images/f_right2.jpg">
+<img  src="images/f_right3.jpg">
+<img  src="images/f_right4.jpg">
+</div>
+</div><!--content-->
+<div class="footer">
+<section>
+<p class="p1"><a href="#">相关法律</a>&nbsp;|&nbsp;版权所有&nbsp;copy&copy;云桂信息学院计应1601李少君&nbsp;15256549570 </p>
+</section>
+</div>
+<div id="myClock"></div>
+</body>
+</html>
