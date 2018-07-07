@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+.nav ul li:hover,.h_right ul li:hover a,.h_right ul li:nth-of-type(3):hover,.third_con1:hover,.third_con2:hover{ transition:all 0.5s;}
+.header{ width:100%; background-color:rgba(0,0,0,0.5); margin:0 auto; height:60px; z-index:2; position:absolute; }
+.h_left{ padding-left:15%; padding-top:5px; float:left;}
+.nav{ float:left; padding-left:30px;}
+.nav ul{ list-style-type:none; }
+.nav ul li{ float:left; width:120px; height:35px; text-align:center; line-height:30px; margin-top:15px;}
+.nav ul li a{ display:block; text-decoration:none; color:#FFF; font-family:"宋体"; font-weight:bold;}
+.nav ul li:hover{ width:120px; height:30px; border-radius:20px; background:#F60;}
+.h_right{ float:left; padding-left:150px;}
+.h_right ul{ list-style-type:none;}
+.h_right ul li{ width:60px; height:57px; float:left; text-align:center; line-height:57px; }
+.h_right ul li a{ font-size:14px; display:block; color:#FFF;text-decoration:none;}
+.h_right ul li:hover a{ text-decoration:underline; color:#F60;}
+.h_right ul li:nth-of-type(3){ width:100px; height:30px; line-height:30px; background:#097CC1; margin-top:15px;}
+.h_right ul li:nth-of-type(3):hover{ background:#36AEF5; }
+.h_right ul li:nth-of-type(3) a:hover{ color:#FFF;}
+.banner{ position:relative; z-index:1;}
+/*first 部分*/
+
+.first content1{ width:1200px; margin:0 auto; }
+.test1:hover p,h4,div,figcaption{ transition:all 0.5s;}
+.first_con1,.first_con2,.first_con3,.first_con4{width:280px; height:420px; float:left; padding:6px; padding-bottom:20px;}
+.first_con1{ width:280px; height:420px; margin-left:100px; }
+.first_con1,.first_con2,.first_con3,.first_con4{ position:relative;}
+.first_con1 figcaption{ width:96.5%; height:20%; position:absolute; background:#F99; left:5px; z-index:5; bottom:20px; opacity:0;}
+.first_con1 figcaption h3{ margin:15px; float:left; color:#FFF;}
+.first_con1 figcaption p{ margin:10px; color:#FFF;}
+.first_con1:hover figcaption{ opacity:1; z-index:5; }
+.first_con1:hover h3{ transform:translate(0px,10px); transition-delay:0.05s;}
+.first_con1:hover p{ transform:translate(0px,-10px); transition-delay:0.05s;}
+.first_con1:hover img{ opacity:0.7;}
+.first .first_con1 p,.first .first_con2 p,.first .first_con3 p,.first .first_con4 p{ font-size:14px;}
+.first_con2 figcaption{ width:96.5%; height:20%; position:absolute; background:#F90; left:5px; z-index:5; bottom:20px; opacity:0;}
+.first_con2 figcaption h3{ margin:15px; float:left; color:#FFF;}
+.first_con2 figcaption p{ margin:10px; color:#FFF;}
+.first_con2:hover figcaption{ opacity:1; z-index:5; }
+.first_con2:hover h3{ transform:translate(0px,10px); transition-delay:0.05s;}
+.first_con2:hover p{ transform:translate(0px,-10px); transition-delay:0.05s;}
+.first_con2:hover img{ opacity:0.7;}
+.first_con3 figcaption{ width:96.5%; height:20%; position:absolute; background:#0C9; left:5px; z-index:5; bottom:20px; opacity:0;}
+.first_con3 figcaption h3{ margin:15px; float:left; color:#FFF;}
+.first_con3 figcaption p{ margin:10px; color:#FFF;}
+.first_con3:hover figcaption{ opacity:1; z-index:5; }
+.first_con3:hover h3{ transform:translate(0px,10px); transition-delay:0.05s;}
+.first_con3:hover p{ transform:translate(0px,-10px); transition-delay:0.05s;}
+.first_con3:hover img{ opacity:0.7;}
+.first_con4 figcaption{ width:96.5%; height:20%; position:absolute; background:#999; left:5px; z-index:5; bottom:20px; opacity:0;}
+.first_con4 figcaption h3{ margin:15px; float:left; color:#FFF;}
+.first_con4 figcaption p{ margin:10px; color:#FFF;}
+.first_con4:hover figcaption{ opacity:1; z-index:5; }
+.first_con4:hover h3{ transform:translate(0px,10px); transition-delay:0.05s;}
+.first_con4:hover p{ transform:translate(0px,-10px); transition-delay:0.05s;}
+.first_con4:hover img{ opacity:0.7;}
+.first p {text-align: center;margin-bottom: 35px;padding-top: 50px; font-size:36px;}
+/*second 部分*/
+.Box {position: relative;}
+			.Box .content2 {width: 1200px;margin: 0 auto;}
+			.Box p {text-align: center;margin-bottom: 35px;padding-top: 60px; font-size:36px;}
+			.Box .Box_con {position: relative;}
+			.Box .Box_con .btnl {position: absolute;}
+			.Box .Box_con .btn {display: block;width: 41px;height: 41px;position: absolute;top: 150px;cursor: pointer;}
+			.Box .Box_con .btnl {background:url(../images/jtl02.png) no-repeat center;left: -45px; z-index:3;}
+			.Box .Box_con .btnr {background: url(../images/jtr02.png) no-repeat center;right: -42px; z-index:3;}
+			.Box .Box_con .btnl:hover {background: url(../images/jtl03.png) no-repeat center;}
+			.Box .Box_con .btnr:hover {background: url(../images/jtr03.png) no-repeat center;}
+			.Box .Box_con .conbox {position: relative;overflow: hidden;}
+			.Box .Box_con .conbox ul {position: relative;list-style: none; height: 340px; overflow:hidden;}
+			.Box .Box_con .conbox ul li {float: left;width:223px;height: 340px;margin-left: 20px;overflow: hidden;}
+			.Box .Box_con .conbox ul li:first-child {margin-left: 0;}
+			.Box .Box_con .conbox ul li img {display: block;width:223px;height:340px;transition: all 0.5s;}
+			.Box .Box_con .conbox ul li:hover img {transform: scale(1.2);}
+			
+			.Box .BoxSwitch {margin-top: 30px;text-align: center;}
+			.Box .BoxSwitch span {display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;width: 30px;height: 3px;background: #ccc;margin: 0 5px;cursor: pointer;}
+			.Box .BoxSwitch span.cur {background: red;}
+			
+/*third部分*/
+.third{ width:80%; height:300px; margin:60px auto; text-align:center;}
+.third section p{ font-size:36px;}
+.third h3{ padding:150px 0 10px 0; cursor:pointer;}
+.third_con1,.third_con2,.third_con3,.third_con4{ width:225px; height:230px; float:left; margin:10px 20px;}
+.third_con1{ background:url(../images/small011.png) no-repeat; background-position:70px 30px;}
+.third_con1:hover{ background:url(../images/small012.png) no-repeat; background-position:70px 30px;}
+.third_con2{ background:url(../images/small021.png) no-repeat; background-position:70px 30px;}
+.third_con2:hover{ background:url(../images/small022.png) no-repeat; background-position:70px 30px;}
+.third_con3{ background:url(../images/small031.png) no-repeat; background-position:70px 30px;}
+.third_con3:hover{ background:url(../images/small032.png) no-repeat; background-position:70px 30px;}
+.third_con4{ background:url(../images/small041.png) no-repeat; background-position:70px 30px;}
+.third_con4:hover{ background:url(../images/small042.png) no-repeat; background-position:70px 30px;}
+
+
+.footer{ width:100%; height:40px; background:#000;}
+.footer section{ width:80%; height:40px; margin:0 auto; text-align:center; line-height:40px;}
+.footer p{ font-size:14px; color:#666;}
+.footer a{ color:#FFF;}
+#myClock{ width:100%; height:20px; background:#000; color:#666; margin:auto; text-align:center; line-height:20px;  font-size:14px;}

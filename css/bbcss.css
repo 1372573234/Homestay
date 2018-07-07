@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+.nav ul li:hover,.h_right ul li:hover a,.h_right ul li:nth-of-type(3):hover,.third_con1:hover,.third_con2:hover,#body01 a:hover,#body02 a:hover,.menu #latest:hover a,.con_right img:hover{ transition:all 0.5s;}
+.header{ width:100%; background-color:rgba(0,0,0,1); margin:0 auto; height:60px; z-index:2; }
+.h_left{ padding-left:15%; padding-top:5px; float:left;}
+.nav{ float:left; padding-left:30px;}
+.nav ul{ list-style-type:none; }
+.nav ul li{ float:left; width:120px; height:35px; text-align:center; line-height:30px; margin-top:15px;}
+.nav ul li a{ display:block; text-decoration:none; color:#FFF; font-family:"宋体"; font-weight:bold;}
+.nav ul li:hover{ width:120px; height:30px; border-radius:20px; background:#F60;}
+.h_right{ float:left; padding-left:150px;}
+.h_right ul{ list-style-type:none;}
+.h_right ul li{ width:60px; height:57px; float:left; text-align:center; line-height:57px; }
+.h_right ul li a{ font-size:14px; display:block; color:#FFF;text-decoration:none;}
+.h_right ul li:hover a{ text-decoration:underline; color:#F60;}
+.h_right ul li:nth-of-type(3){ width:100px; height:30px; line-height:30px; background:#097CC1; margin-top:15px;}
+.h_right ul li:nth-of-type(3):hover{ background:#36AEF5; }
+.h_right ul li:nth-of-type(3) a:hover{ color:#FFF;}
+/*content部分*/
+.content{ width:80%; height:700px; margin:10px auto;}
+.con_left{ width:55%; height:700px; float:left; margin-left:30px;  position:relative;}
+.menu{ width:190px; height:40px;}
+.menu ul{ list-style-type:none;}
+.menu ul li{ float:left; width:80px; height:30px; line-height:30px; text-align:center; margin:5px;}
+.menu ul li a{ display:block; color:#000; text-decoration:none; font-size:14px;}
+.menu #current a{ color:#F60; border:1px solid #F60; border-radius:10px;}
+.menu #latest:hover a{  color:#F60; border:1px solid #F60;border-radius:10px;}
+#body01 img{ width:60px; height:60px; border-radius:50%;}
+#body02 img{ width:60px; height:60px; border-radius:50%;}
+#body01{ position:absolute; top:50px; left:30px;}
+#body02{  position:absolute; top:50px; left:30px; display:none;}
+#body01 a:hover{ text-decoration:underline; color:#F60;}
+#body02 a:hover{ text-decoration:underline; color:#F60;}
+.con_left dl{ width:500px; height:600px;  }
+.con_left dd{ width:500px; height:70px; margin:10px; }
+.con_left  dl dd span{ line-height:40px; font-size:12px; margin:15px;}
+.con_left dl dd img{ float:left; width:60px; height:60px; border-radius:50%; margin:5px;}
+.con_left  dl dd a{ font-size:16px; color:#666; text-decoration:none; margin:15px; line-height:30px; }
+
+.con_right{ width:35%; height:700px; float:left; margin-left:40px; text-align:center;}
+.con_right p{ margin:10px; font-size:25px;}
+.con_right img{ width:300px; height:150px; }
+.con_right img:hover{ opacity:0.5;}
+
+.footer{ width:100%; height:40px; background:#000;}
+.footer section{ width:80%; height:40px; margin:0 auto; text-align:center; line-height:40px;}
+.footer p{ font-size:14px; color:#666;}
+.footer a{ color:#FFF;}
+#myClock{ width:100%; height:20px; background:#000; color:#666; margin:auto; text-align:center; line-height:20px;  font-size:14px;}
